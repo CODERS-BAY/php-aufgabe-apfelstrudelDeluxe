@@ -1,0 +1,196 @@
+:root {
+    --primary: #06e07fff;
+    --secondary: #1f84efff;
+    --font: #130303;
+    --accent: #e5e5e5;
+    --yellow: #FFD200;
+    --red: ##E3073C;
+
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0; 
+    padding: 0;
+    color: var(--font);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+[ class *= "fa"] {
+    color: var(--font);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    /* margin: 1rem; */
+    padding: 0.5rem;
+}
+
+[ class *= "fa"]:hover {
+    color: var(--secondary);
+}
+
+html {
+    position: relative;
+    min-height: 100vh;
+    
+}
+
+.green {
+    background-color: var(--primary);
+}
+
+.red {
+    background-color: var(--red);
+}
+
+.blue {
+    background-color: var(--secondary);
+}
+
+.yellow {
+    background-color: var(--yellow);
+}
+
+.purple {
+    background-color: rgb(185, 0, 185);
+}
+
+.error {
+    background-color: rosybrown;
+}
+
+/*---------form---------*/
+
+form {
+    width: 30vw;
+    background-color: var(--accent);
+    padding: 20px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto;
+    text-align: center; 
+    box-shadow: 5px 10px var(--secondary); 
+}
+
+
+.formLarge {
+    width: 90vw;
+    background-color: var(--accent);
+    padding: 20px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    text-align: center; 
+    box-shadow: 5px 10px var(--secondary); 
+}
+
+.formMedium {
+    width: 50vw;
+    background-color: var(--accent);
+    padding: 20px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    text-align: center; 
+    box-shadow: 5px 10px var(--secondary); 
+}
+
+
+.button a {
+    background-color: var(--secondary);
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.button a:hover {
+    box-shadow: 5px 10px var(--yellow);
+}
+
+.submit:hover {
+    background-color: var(--secondary);
+    color: white;
+}
+
+form > * {
+    margin: 10px;
+    padding: 10px;
+}
+
+/* ------------Header------------- */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color: var(--accent);
+    align-items: center;
+}
+
+header img {
+    width: 150px;
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px;
+    color: var(--secondary);
+}
+
+nav ul li.active a, nav ul li:hover a {
+    font-weight: bold;
+} 
+
+/* -------------main--------------- */
+
+main {
+    padding: 30px;    
+}
+
+.image img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 10px 5px var(--yellow);
+    margin: 15px 0px;
+}
+
+th, td {
+    padding: 5px;
+    text-align: left;
+  }
+
+
+/* ----------------footer------------------- */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 4rem;
+}
