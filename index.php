@@ -103,6 +103,26 @@ include_once ('include/header.php'); ?>
                 
         </section>
 
+        <section>
+        <h2>Du bist nicht allein!</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <form id="teamMates">
+                            <input type="text" name="team" hidden value="<?php echo $_SESSION['session_user_team_id'] ?>">
+                            <div class="buttonSubmit">
+                            <button>KollegInnen zeigen</button>
+                            </div>
+                            <!-- <input type="submit" name="checkTeamMates" id="checkTeamMates"> -->
+                        </form>
+                    </div>
+                    <div class="col-8">
+                        <div id="yourTeamMates"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
 
 

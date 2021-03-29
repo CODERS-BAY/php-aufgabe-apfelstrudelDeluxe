@@ -68,7 +68,7 @@ html {
 
 /*---------form---------*/
 
-form {
+.form {
     width: 30vw;
     background-color: var(--accent);
     padding: 20px;
@@ -105,8 +105,7 @@ form {
     box-shadow: 5px 10px var(--secondary); 
 }
 
-
-.button a {
+.button a, .buttonSubmit {
     background-color: var(--secondary);
     border: none;
     color: white;
@@ -116,9 +115,20 @@ form {
     display: inline-block;
 }
 
-.button a:hover {
+.button a:hover, .buttonSubmit:hover {
     box-shadow: 5px 10px var(--yellow);
 }
+
+.buttonSubmit>button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
 
 .submit:hover {
     background-color: var(--secondary);
