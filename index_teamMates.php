@@ -9,7 +9,7 @@
         <?php include_once('include/connection.php'); 
 
             $select = "SELECT user_username, user_name, user_surname, user_mail, user_team_id FROM user 
-            WHERE user_team_id = " . $_SESSION['session_user_team_id'] . ";";
+            WHERE user_team_id = " . $_SESSION['session_user_team_id'] . " AND NOT user_username = '" . $_SESSION['session_user_username'] . "';";
 
             $result = $connection->query($select);
                 if($result->num_rows > 0) {

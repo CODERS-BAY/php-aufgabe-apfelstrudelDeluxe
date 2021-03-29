@@ -22,7 +22,7 @@ $(document).ready(function() {
                 $('#yourTeamMates').html(data);
             }
         })
-    })
+    });
 
 
 

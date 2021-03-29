@@ -111,7 +111,7 @@ include_once ('include/header.php'); ?>
                         <form id="teamMates">
                             <input type="text" name="team" hidden value="<?php echo $_SESSION['session_user_team_id'] ?>">
                             <div class="buttonSubmit">
-                            <button>KollegInnen zeigen</button>
+                                <button>KollegInnen zeigen</button>
                             </div>
                             <!-- <input type="submit" name="checkTeamMates" id="checkTeamMates"> -->
                         </form>
@@ -132,7 +132,7 @@ include_once ('include/header.php'); ?>
         //session_start();
         ?>
 
-        <form method="POST" action="login.php" class="form">
+        <form method="POST" action="login.php" class="form" id="loginForm">
             <h1>Mitarbeiterverwaltung</h1>
             <input type="text" name="userName" placeholder="Benutzername">
             <input type="password" name="userPassword" placeholder="Paswort">
